@@ -20,14 +20,14 @@
                         <form id="form">
                             <div>
                                 <h3 class="colPur">Nome e cognome</h3>
-                                <input class="inp" type="text">
+                                <input id="nomCogInp" class="inp" type="text" maxlength="50">
                             </div>
                             <div>
                                 <h3 class="colPur">Chilometri da percorrere</h3>
-                                <input class="inp" type="text">
+                                <input id="chilometri" class="inp" type="text">
                                 <div id="calCanContainer">
                                     <div>
-                                        <div class="btn colPur">Calcola</div>
+                                        <div id="calcola" class="btn colPur">Calcola</div>
                                     </div>
                                     <div>
                                         <input class="btn colPur" type="reset" value="Cancella">
@@ -36,10 +36,10 @@
                             </div>
                             <div>
                                 <h3 class="colPur">Fascia d'età</h3>
-                                <select class="inp">
-                                    <option>Minorenne</option>
-                                    <option>Maggiorenne</option>
-                                    <option>Over 65</option>
+                                <select id="eta" class="inp">
+                                    <option value="minorenne">Minorenne</option>
+                                    <option value="maggiorenne">Maggiorenne</option>
+                                    <option value="over65">Over 65</option>
                                 </select>
                             </div>
                         </form>
@@ -48,7 +48,7 @@
             </div>
         </div>
         <!-- Riga 2 -->
-        <div>
+        <div id="riga2">
             <div class="centerContainer">
                 <div>
                     <h2>IL TUO BIGLIETTO</h2>
@@ -61,24 +61,24 @@
                         <div id="subContainer">
                             <div>
                                 <h3>NOME PASSEGGERO</h3>
-                                <h4>Jon Snow</h4>
+                                <h4 id="nomCogOut"></h4>
                             </div>
                             <div>
                                 <h3>Offerta</h3>
-                                <div class="info">Biglietto standard</div>
+                                <div id="tipoBiglietto" class="info"></div>
                             </div>
                             <div>
                                 <h3>Carrozza</h3>
-                                <div class="info">5</div>
+                                <div id="carrozza" class="info"></div>
                             </div>
                             <div>
                                 <h3>Codice CP</h3>
-                                <div class="info">92911</div>
+                                <div id="codiceCP" class="info"></div>
                             </div>
                             <div>
                                 <h3>Costo biglietto</h3>
                                 <div class="info">
-                                    <span>2.10</span>
+                                    <span id="costoOut"></span>
                                     <span> €</span>
                                 </div>
                             </div>
@@ -87,6 +87,10 @@
                 </div>
             </div>
         </div>
+        <div id="errore">
+            <div id="textErrore"></div>
+        </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>

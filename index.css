@@ -16,7 +16,7 @@
     padding: 1rem 0;
 }
 
-#container > div{
+#container > div:first-child{
     height: 50%;
     display: flex;
     justify-content: center;
@@ -42,6 +42,12 @@
 .contentContainer{
     height: 100%;
     background-color: white;
+}
+
+#riga2{
+    height: 50%;
+    display: none;
+    justify-content: center;
 }
 /* Riga 1 */
 #contentContainer1{
@@ -150,4 +156,20 @@
 
 #subContainer > div:nth-child(1){
     background-color: rgba(132,132,132,255);
+}
+
+#nomCogOut{
+    word-break: break-all;
+}
+/* Errore */
+#errore{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+#errore > div{
+    width: 80%;
+    font-size: 2rem;
+    color: white;
 }
