@@ -1,0 +1,81 @@
+/* Generals */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Container */
+#container{
+    height: 100vh;
+    background-color: rgba(185,20,80,255);
+    padding: 1rem 0;
+}
+
+#container > div{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.centerContainer{
+    height: 100%;
+    width: 80%;
+}
+
+.centerContainer > div:first-child{
+    height: 20%;
+}
+
+.centerContainer > div:last-child{
+    height: 80%;
+}
+
+.contentContainer{
+    height: 100%;
+    background-color: white;
+}
+/* Riga 1 */
+#contentContainer1{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+}
+
+#contentContainer1 > div{
+    height: 100%;
+    width: calc(100% / 3);
+    border: 1px solid black;
+}
+/* Riga 2 */
+#contentContainer2 > div:first-child{
+    height: 20%;
+    border: 1px solid black;
+}
+
+#contentContainer2 > div:last-child{
+    height: 80%;
+    border: 1px solid black;
+}
+
+#contentContainer2{
+    padding: 1rem;
+}
+
+#subContainer > div:nth-child(1),
+#subContainer > div:nth-child(2){
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+}
+
+#subContainer > div:nth-child(3),
+#subContainer > div:nth-child(4),
+#subContainer > div:nth-child(5){
+    height: 100%;
+    width: calc(50% / 3);
+    border: 1px solid black;
+}
+
+#subContainer{
+    display: flex;
+}
